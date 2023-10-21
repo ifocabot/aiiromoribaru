@@ -4,9 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <style>
+        .content-section {
+            display: none;
+        }
+    </style>
   </head>
   <body>
-
         <section id="hero"">
             <div class="container max-w-6xl mx-auto px-6 py-12 md:px-0">
                 <nav class="flex items-center justify-between font-bold text-white text-xl">
@@ -29,7 +34,7 @@
                             <div class="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
                         </div>
                         <div class="group">
-                            <a href="#" class="bg-white py-2 px-4 text-purple-500 font-bold">CONTACT US</a>
+                            <a href="#" class="rounded-sm transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100 py-2 px-4 text-white font-bold">CONTACT US</a>
                             <div class="mx-2  group-hover:border-b group-hover:border-blue-500"></div>
                         </div>
                     </div>
@@ -40,19 +45,72 @@
 
         <section id="test">
             <div class="flex justify-center h-20 text-white font-bold">
-                <a href="#" class="mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">ABOUT</a>
-                <a href="#" class="mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">ARTIST</a>
-                <a href="#" class="mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">NEWS</a>            
+                <button type="button" data-section="section1" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100 ">About</button>
+                <button type="button" data-section="section2" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">Artist</button>
+                <button type="button" data-section="section3" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">News</button>
             </div>
         </section>
-        
-        <section id="section2">
-            <div class="w-full h-96 bg-slate-900">
-
+        <section id="body">
+            <div class="w-full h-aut pb-4">
+                <div class="content-section" id="section1">
+                    <div class="w-full bg-red-400 h-16 font-bold text-2xl">
+                        <p>Section 1 Content goes here</p>
+                    </div>
+                </div>
+                <div class="content-section" id="section2">
+                    <div class="card w-full h-auto flex items-center bg-white group relative">
+                        <div class="w-96 px-16 py-20 text-7xl text-center font-bold rounded-full border border-white flex items-center justify-center text-gray-600 group-hover:text-black duration-300">
+                            01
+                        </div>
+                        <div class="card w-full h-auto flex items-center bg-white group relative">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
+                                <span class="text-4xl text-white font-bold">NOPAL KEREN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full h-auto flex items-center bg-white group relative">
+                        <div class="w-96 px-16 py-20 text-7xl text-center font-bold rounded-full border border-white flex items-center justify-center text-gray-600 group-hover:text-black duration-300">
+                            02
+                        </div>
+                        <div class="card w-full h-auto flex items-center bg-white group relative">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
+                                <span class="text-4xl text-white font-bold">TOKAGE KEREN</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-full h-auto flex items-center bg-white group relative">
+                        <div class="w-96 px-16 py-20 text-7xl text-center font-bold rounded-full border border-white flex items-center justify-center text-gray-600 group-hover:text-black duration-300">
+                            03
+                        </div>
+                        <div class="card w-full h-auto flex items-center bg-white group relative">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
+                                <span class="text-4xl text-white font-bold">KAPAN DOTA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section" id="section3">
+                    NEWS
+                </div>
             </div>
         </section>
 
-    <body></body>
+            <div class="w-full bg-purple-500 h-32 text-center text-white font-bold text-4xl"> FOOTER</div>
 
+        <script>
+        $(function() {
+
+            $(".btn").on("click", function() {
+                //hide all sections
+                $(".content-section").hide();
+                //show the section depending on which button was clicked
+                $("#" + $(this).attr("data-section")).show();
+            });
+
+            });
+        </script>
   </body>
 </html>
