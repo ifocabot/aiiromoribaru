@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <style>
         .content-section {
@@ -45,16 +45,17 @@
 
         <section id="test">
             <div class="flex justify-center h-20 text-white font-bold">
-                <button type="button" data-section="section1" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100 ">About</button>
-                <button type="button" data-section="section2" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">Artist</button>
-                <button type="button" data-section="section3" class="btn mx-10 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">News</button>
+                <button type="button" data-section="section1" class="btn mx-2 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100 ">About</button>
+                <button type="button" data-section="section2" class="btn mx-2 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">Artist</button>
+                <button type="button" data-section="section3" class="btn mx-2 my-4 px-10 py-3  rounded-xl transition-all duration-500 bg-gradient-to-tl from-indigo-300 via-purple-600 to-purple-400 bg-size-200 bg-pos-0 hover:bg-pos-100">News</button>
             </div>
         </section>
+
         <section id="body">
-            <div class="w-full h-aut pb-4">
+            <div class="w-full h-auto pb-4">
                 <div class="content-section" id="section1">
                     <div class="w-full bg-red-400 h-16 font-bold text-2xl">
-                        <p>Section 1 Content goes here</p>
+                        <p class="pl-64 pt-4">Section 1 Content goes here</p>
                     </div>
                 </div>
                 <div class="content-section" id="section2">
@@ -63,7 +64,7 @@
                             01
                         </div>
                         <div class="card w-full h-auto flex items-center bg-white group relative">
-                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 brightness-50 group-hover:brightness-100 duration-300">
                             <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
                                 <span class="text-4xl text-white font-bold">NOPAL KEREN</span>
                             </div>
@@ -74,7 +75,7 @@
                             02
                         </div>
                         <div class="card w-full h-auto flex items-center bg-white group relative">
-                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 brightness-50 group-hover:brightness-100 duration-300">
                             <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
                                 <span class="text-4xl text-white font-bold">TOKAGE KEREN</span>
                             </div>
@@ -85,7 +86,7 @@
                             03
                         </div>
                         <div class="card w-full h-auto flex items-center bg-white group relative">
-                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 group-hover:grayscale duration-300">
+                            <img src="img/dor.png" alt="Image" class="w-full h-52 object-cover pr-32 brightness-50 group-hover:brightness-100 duration-300">
                             <div class="absolute bottom-0 left-0 p-4 opacity-0 group-hover:opacity-100 duration-300">
                                 <span class="text-4xl text-white font-bold">KAPAN DOTA</span>
                             </div>
@@ -98,7 +99,71 @@
             </div>
         </section>
 
-            <div class="w-full bg-purple-500 h-32 text-center text-white font-bold text-4xl"> FOOTER</div>
+        <section>
+            <div class="w-full h-20 bg-purple-700  text-white font-bold">
+            <div class="pl-64 py-5 text-3xl uppercase">gallery</div>
+            </div>
+            <div class="container mx-auto px-5 py-2 lg:px-10 lg:py-10">
+            <div class="-m-1 flex flex-wrap md:-m-2">
+                <div class="flex w-1/2 flex-wrap">
+                <div class="w-1/2 p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(70).webp" />
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(72).webp" />
+                </div>
+                <div class="w-full p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp" />
+                </div>
+                </div>
+                <div class="flex w-1/2 flex-wrap">
+                <div class="w-full p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(74).webp" />
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(75).webp" />
+                </div>
+                <div class="w-1/2 p-1 md:p-2">
+                    <img
+                    alt="gallery"
+                    class="block h-full w-full rounded-lg object-cover object-center"
+                    src="https://tecdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(77).webp" />
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <footer class="bg-purple-700 text-white py-4">
+            <div class="container mx-auto flex flex-col md:flex-row items-center ">
+                <div class="mb-2 md:mb-0">
+                    <p class="text-3xl font-bold uppercase">AIIROMORI</p>
+                    <p class="text-sm font-bold uppercase">.test</p>
+                </div>
+                <div class="mt-2 md:mt-0 md:ml-auto">
+                    <a href="#" class="text-white hover:text-gray-400 block mb-2">Facebook</a>
+                    <a href="#" class="text-white hover:text-gray-400 block mb-2">Instagram</a>
+                    <a href="#" class="text-white hover:text-gray-400 block mb-2">Twitter</a>
+                </div>
+            </div>
+        </footer>
+
+
 
         <script>
         $(function() {
